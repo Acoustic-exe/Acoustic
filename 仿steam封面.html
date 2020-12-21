@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿steam封面</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;            
+        }
+        .panel{
+            background: rgb(80, 90, 97);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            user-select: none;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .panel .cardpanel{
+            width: 200px;
+            height: 300px;
+            perspective: 800px;
+            /* padding: 10px; */
+            margin: 1rem  1.5rem ;
+        }
+
+        .panel .cardpanel .card{
+            box-shadow: 0 0.33rem 0.66rem #333333;
+            transform-origin: 50% -20%;
+            transition: 0.6s cubic-bezier(0, 0, 0, 1);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .panel .cardpanel .card .glass{
+            width: 500px;
+            height: 200px;
+            left: -50%;
+            background: linear-gradient(rgba(0,0,0,0),#fff);
+            transform: rotate(32deg) translateY(20%);
+            transform-origin: 100% 50%;
+            transition: 0.6s cubic-bezier(0, 0, 0, 1);
+            opacity: 0.25;
+            filter: blur(5px);
+            align-self: center;
+            z-index: 100;
+        }
+
+        .panel .cardpanel .card{
+            width: 100%;
+            height: 100%;
+        }
+
+        .panel .cardpanel .card .picture{
+            width: 100%;
+        }
+        .panel .cardpanel .card .picture img{
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        .panel .cardpanel .card:hover{
+            transform: rotateX(10deg);
+            box-shadow: 0 0.66rem 1.33rem #333333;
+            filter:brightness(1.1);
+        }
+
+        .panel .cardpanel .card:hover .glass{
+            transform: rotate(32deg) translateY(70%);
+            opacity: 0.4;
+        }
+
+        .panel .cardpanel .card:active{
+            transform: rotateX(8deg);
+            box-shadow: 0 0.6rem 1.28rem #333333;
+            filter:brightness(0.75);
+            transition: 0.2s cubic-bezier(0, 0.1, 0, 0.99);
+        }
+        .panel .cardpanel .card:active .glass{
+            transform: rotate(32deg) translateY(68%);
+            opacity: 0.4;
+        }
+
+        .panel .cardpanel .labelpart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            transform: translateY(-70%);
+            transition: 0.3s cubic-bezier(0, 0.1, 0, 0.99);
+        }
+
+        .panel .cardpanel .labelpart p{
+            padding: 0.1rem 1rem;
+            background: grey;
+            font-size: 0.5rem;
+            border-radius: 0.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .panel .cardpanel:hover .labelpart{
+            transform: translateY(-35%) scale(1.1);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="panel">
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <img src="./img.webp">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+            <div class="labelpart">
+                <p>Label</p>
+            </div>
+        </div>
+        <div class="cardpanel">
+            <div class="card">                
+                <div class="picture">
+                    <div class="glass"></div>
+                </div>
+                <div class="title"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
